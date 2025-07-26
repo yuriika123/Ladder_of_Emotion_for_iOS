@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Ladder_of_EmotionApp: App {
@@ -13,5 +14,6 @@ struct Ladder_of_EmotionApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: EmotionRecord.self)
     }
 }
