@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D4A1869D2E34D691006C692F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A186872E34D68F006C692F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4A1868E2E34D68F006C692F;
+			remoteInfo = Ladder_of_Emotion;
+		};
+		D4A186A72E34D691006C692F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A186872E34D68F006C692F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4A1868E2E34D68F006C692F;
+			remoteInfo = Ladder_of_Emotion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4A1868F2E34D68F006C692F /* Ladder_of_Emotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ladder_of_Emotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A1869C2E34D691006C692F /* Ladder_of_EmotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ladder_of_EmotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A186A62E34D691006C692F /* Ladder_of_EmotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ladder_of_EmotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D4A186912E34D68F006C692F /* Ladder_of_Emotion */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Ladder_of_Emotion;
+			sourceTree = "<group>";
+		};
+		D4A1869F2E34D691006C692F /* Ladder_of_EmotionTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Ladder_of_EmotionTests;
+			sourceTree = "<group>";
+		};
+		D4A186A92E34D691006C692F /* Ladder_of_EmotionUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Ladder_of_EmotionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4A1868C2E34D68F006C692F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A186992E34D691006C692F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A186A32E34D691006C692F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4A186862E34D68F006C692F = {
+			isa = PBXGroup;
+			children = (
+				D4A186912E34D68F006C692F /* Ladder_of_Emotion */,
+				D4A1869F2E34D691006C692F /* Ladder_of_EmotionTests */,
+				D4A186A92E34D691006C692F /* Ladder_of_EmotionUITests */,
+				D4A186902E34D68F006C692F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4A186902E34D68F006C692F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1868F2E34D68F006C692F /* Ladder_of_Emotion.app */,
+				D4A1869C2E34D691006C692F /* Ladder_of_EmotionTests.xctest */,
+				D4A186A62E34D691006C692F /* Ladder_of_EmotionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4A1868E2E34D68F006C692F /* Ladder_of_Emotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A186B02E34D691006C692F /* Build configuration list for PBXNativeTarget "Ladder_of_Emotion" */;
+			buildPhases = (
+				D4A1868B2E34D68F006C692F /* Sources */,
+				D4A1868C2E34D68F006C692F /* Frameworks */,
+				D4A1868D2E34D68F006C692F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D4A186912E34D68F006C692F /* Ladder_of_Emotion */,
+			);
+			name = Ladder_of_Emotion;
+			packageProductDependencies = (
+			);
+			productName = Ladder_of_Emotion;
+			productReference = D4A1868F2E34D68F006C692F /* Ladder_of_Emotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4A1869B2E34D691006C692F /* Ladder_of_EmotionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A186B32E34D691006C692F /* Build configuration list for PBXNativeTarget "Ladder_of_EmotionTests" */;
+			buildPhases = (
+				D4A186982E34D691006C692F /* Sources */,
+				D4A186992E34D691006C692F /* Frameworks */,
+				D4A1869A2E34D691006C692F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4A1869E2E34D691006C692F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D4A1869F2E34D691006C692F /* Ladder_of_EmotionTests */,
+			);
+			name = Ladder_of_EmotionTests;
+			packageProductDependencies = (
+			);
+			productName = Ladder_of_EmotionTests;
+			productReference = D4A1869C2E34D691006C692F /* Ladder_of_EmotionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4A186A52E34D691006C692F /* Ladder_of_EmotionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A186B62E34D691006C692F /* Build configuration list for PBXNativeTarget "Ladder_of_EmotionUITests" */;
+			buildPhases = (
+				D4A186A22E34D691006C692F /* Sources */,
+				D4A186A32E34D691006C692F /* Frameworks */,
+				D4A186A42E34D691006C692F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4A186A82E34D691006C692F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D4A186A92E34D691006C692F /* Ladder_of_EmotionUITests */,
+			);
+			name = Ladder_of_EmotionUITests;
+			packageProductDependencies = (
+			);
+			productName = Ladder_of_EmotionUITests;
+			productReference = D4A186A62E34D691006C692F /* Ladder_of_EmotionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4A186872E34D68F006C692F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					D4A1868E2E34D68F006C692F = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					D4A1869B2E34D691006C692F = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D4A1868E2E34D68F006C692F;
+					};
+					D4A186A52E34D691006C692F = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D4A1868E2E34D68F006C692F;
+					};
+				};
+			};
+			buildConfigurationList = D4A1868A2E34D68F006C692F /* Build configuration list for PBXProject "Ladder_of_Emotion" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4A186862E34D68F006C692F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D4A186902E34D68F006C692F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4A1868E2E34D68F006C692F /* Ladder_of_Emotion */,
+				D4A1869B2E34D691006C692F /* Ladder_of_EmotionTests */,
+				D4A186A52E34D691006C692F /* Ladder_of_EmotionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4A1868D2E34D68F006C692F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A1869A2E34D691006C692F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A186A42E34D691006C692F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4A1868B2E34D68F006C692F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A186982E34D691006C692F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A186A22E34D691006C692F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4A1869E2E34D691006C692F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4A1868E2E34D68F006C692F /* Ladder_of_Emotion */;
+			targetProxy = D4A1869D2E34D691006C692F /* PBXContainerItemProxy */;
+		};
+		D4A186A82E34D691006C692F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4A1868E2E34D68F006C692F /* Ladder_of_Emotion */;
+			targetProxy = D4A186A72E34D691006C692F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4A186AE2E34D691006C692F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4297RVB2QJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4A186AF2E34D691006C692F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4297RVB2QJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4A186B12E34D691006C692F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4297RVB2QJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okunoyuta.Ladder-of-Emotion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4A186B22E34D691006C692F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4297RVB2QJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okunoyuta.Ladder-of-Emotion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4A186B42E34D691006C692F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4297RVB2QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okunoyuta.Ladder-of-EmotionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ladder_of_Emotion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ladder_of_Emotion";
+			};
+			name = Debug;
+		};
+		D4A186B52E34D691006C692F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4297RVB2QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okunoyuta.Ladder-of-EmotionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ladder_of_Emotion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Ladder_of_Emotion";
+			};
+			name = Release;
+		};
+		D4A186B72E34D691006C692F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4297RVB2QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okunoyuta.Ladder-of-EmotionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ladder_of_Emotion;
+			};
+			name = Debug;
+		};
+		D4A186B82E34D691006C692F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4297RVB2QJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okunoyuta.Ladder-of-EmotionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ladder_of_Emotion;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4A1868A2E34D68F006C692F /* Build configuration list for PBXProject "Ladder_of_Emotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A186AE2E34D691006C692F /* Debug */,
+				D4A186AF2E34D691006C692F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A186B02E34D691006C692F /* Build configuration list for PBXNativeTarget "Ladder_of_Emotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A186B12E34D691006C692F /* Debug */,
+				D4A186B22E34D691006C692F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A186B32E34D691006C692F /* Build configuration list for PBXNativeTarget "Ladder_of_EmotionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A186B42E34D691006C692F /* Debug */,
+				D4A186B52E34D691006C692F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A186B62E34D691006C692F /* Build configuration list for PBXNativeTarget "Ladder_of_EmotionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A186B72E34D691006C692F /* Debug */,
+				D4A186B82E34D691006C692F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4A186872E34D68F006C692F /* Project object */;
+}
