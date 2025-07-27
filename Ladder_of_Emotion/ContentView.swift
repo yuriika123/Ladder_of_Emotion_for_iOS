@@ -191,65 +191,159 @@ struct MemoInputView: View {
     }
 }
 
+struct FilterView: View {
+    // --- フィルタ機能用の変数を追加 ---
+    @Binding var startDate: Date
+    @Binding var endDate: Date
+    @Binding var selectedFloor: Int?
+    @Binding var showOnlyWithMemo: Bool
+    
+    @Environment(\.dismiss) var dismiss
+    
+    var body: some View {
+        NavigationView {
+            Form {
+                Section(header: Text("日付で絞り込み")) {
+                    DatePicker("開始日", selection: $startDate, displayedComponents: .date)
+                    DatePicker("終了日", selection: $endDate, in: startDate..., displayedComponents: .date)
+                }
+                Section(header: Text("内容で絞り込み")) {
+                    Picker("フロアを選択", selection: $selectedFloor) {
+                        Text("すべてのフロア").tag(Int?.none)
+                        ForEach((1...9).reversed(), id: \.self) { floor in
+                            Text("\(floor)階").tag(Int?.some(floor))
+                        }
+                    }
+                    .pickerStyle(.menu)
+                    Toggle("メモがある記録のみ", isOn: $showOnlyWithMemo)
+                }
+            }
+            .navigationTitle("フィルター")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("完了") {
+                        dismiss()
+                    }
+                }
+            }
+        }
+    }
+}
+
 struct HistoryView: View {
     @Query(sort: \EmotionRecord.timestamp, order: .reverse) private var records: [EmotionRecord]
     
     @Environment(\.modelContext) private var modelContext
     
+    // --- フィルタ機能用の変数を追加 ---
+    @State private var startDate: Date = Calendar.current.date(byAdding: .month, value: -1, to: Date())!
+    @State private var endDate: Date = Date()
+    @State private var selectedFloor: Int? = nil
+    @State private var showOnlyWithMemo = false
+    
+    @State private var isShowingFilterSheet = false
+    
+    // --- フィルターされた履歴を計算する部分 ---
+    var filteredRecords: [EmotionRecord] {
+        records.filter { record in
+            let calendar = Calendar.current
+            let endOfDay = calendar.startOfDay(for: endDate)
+            let adjustedEndDate = calendar.date(byAdding: .day, value: 1, to: endOfDay)!
+            
+            let isDateInRange = record.timestamp >= startDate && record.timestamp < Calendar.current.date(byAdding: .day, value: 1, to: endDate)!
+            let isFloorMatch = selectedFloor == nil || record.floor == selectedFloor
+            let hasMemo = !showOnlyWithMemo || !record.memo.isEmpty
+            return isDateInRange && isFloorMatch && hasMemo
+        }
+    }
+    
     var body: some View {
-        VStack {
-            if records.isEmpty {
-                Spacer()
-                Text("感情記録がありません")
-                    .font(.headline)
-                    .foregroundColor(.gray)
-                Spacer()
-            } else {
-                List {
-                    ForEach(records) { record in
-                        VStack(alignment: .leading, spacing: 8) {
-                            HStack {
-                                Text("\(record.floor)")
-                                    .font(.headline)
-                                    .frame(width: 30, height: 30)
-                                    .glassEffect()
-                                    .background(colorForFloorNumber(with: record.floor).opacity(0.5))
-                                    .foregroundColor(.white)
-                                    .clipShape(Circle())
-                                    .glassEffect()
-                                Text(record.emotionName)
-                                    .font(.headline)
-                                    .padding(6)
-                                    .glassEffect()
-                                    .background(colorForFloorNumber(with: record.floor).opacity(0.5))
-                                    .foregroundColor(.white)
-                                    .cornerRadius(20)
-                                    .glassEffect()
+        NavigationView {
+            VStack {
+                if records.isEmpty {
+                    Spacer()
+                    Text("感情記録がありません")
+                        .font(.headline)
+                        .foregroundColor(.gray)
+                    Spacer()
+                } else {
+                    List {
+                        ForEach(filteredRecords) { record in
+                            VStack(alignment: .leading, spacing: 8) {
+                                HStack {
+                                    Text("\(record.floor)")
+                                        .font(.headline)
+                                        .frame(width: 30, height: 30)
+                                        .glassEffect()
+                                        .background(colorForFloorNumber(with: record.floor).opacity(0.5))
+                                        .foregroundColor(.white)
+                                        .clipShape(Circle())
+                                        .glassEffect()
+                                    Text(record.emotionName)
+                                        .font(.headline)
+                                        .padding(6)
+                                        .glassEffect()
+                                        .background(colorForFloorNumber(with: record.floor).opacity(0.5))
+                                        .foregroundColor(.white)
+                                        .cornerRadius(20)
+                                        .glassEffect()
+                                    
+                                    Spacer()
+                                    
+                                    Text(record.timestamp, style: .date)
+                                    Text(record.timestamp, style: .time)
+                                }
                                 
-                                Spacer()
-                                
-                                Text(record.timestamp, style: .date)
-                                Text(record.timestamp, style: .time)
+                                if !record.memo.isEmpty {
+                                    Text(record.memo)
+                                        .font(.body)
+                                        .padding(.top, 4)
+                                }
                             }
-                            
-                            if !record.memo.isEmpty {
-                                Text(record.memo)
-                                    .font(.body)
-                                    .padding(.top, 4)
-                            }
+                            .padding(.vertical, 8)
                         }
-                        .padding(.vertical, 8)
+                        .onDelete(perform: deleteRecord)
                     }
-                    .onDelete(perform: deleteRecord)
                 }
+            }
+            .navigationTitle("履歴")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        isShowingFilterSheet = true // ボタンを押すとシートが表示される
+                    } label: {
+                        // アイコンとテキストで分かりやすく
+                        Label("フィルター", systemImage: "line.3.horizontal.decrease.circle")
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("条件をリセット") {
+                        startDate = .distantPast
+                        endDate = .distantFuture
+                        selectedFloor = nil
+                        showOnlyWithMemo = false
+                    }
+                }
+            }
+            .sheet(isPresented: $isShowingFilterSheet) {
+                FilterView(
+                    startDate: $startDate,
+                    endDate: $endDate,
+                    selectedFloor: $selectedFloor,
+                    showOnlyWithMemo: $showOnlyWithMemo
+                )
             }
         }
     }
     
     func deleteRecord(at offsets: IndexSet) {
         for offset in offsets {
-            let record = records[offset]
-            modelContext.delete(record)
+            let recordToDelete = filteredRecords[offset]
+            if let index = records.firstIndex(where: { $0.id == recordToDelete.id }) {
+                modelContext.delete(records[index])
+            }
         }
     }
     
